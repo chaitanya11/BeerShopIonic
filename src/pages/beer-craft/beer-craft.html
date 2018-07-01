@@ -1,0 +1,48 @@
+<!--
+  Generated template for the BeerCraftPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar class="nav-bar">
+    <ion-title>BeerCraft</ion-title>
+  </ion-navbar>
+  <div class="header-utils">
+    <div class="search-bar">
+      <ion-searchbar [(ngModel)]="searchInput" [showCancelButton]="false" (ionInput)="onInput($event)" (ionClear)="onClear($event)">
+      </ion-searchbar>
+    </div>
+    <div class="sort-buttons">
+      <ion-icon name="arrow-down" (click)="sortByAcending()" small class="icon-arrow-down"></ion-icon>
+      <ion-icon name="arrow-up" (click)="sortByDecending()" small class="icon-arrow-up"></ion-icon>
+    </div>
+    <div class="cart-icon">
+      <ion-icon name="cart" large (click)="navivigateToCartPage()"></ion-icon>
+      <ion-badge id="cart-badge">{{cartItems.length}}</ion-badge>
+    </div>
+  </div>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+
+    <ion-item *ngFor="let beer of filteredBeers" class="beer-card">
+      <ion-icon name="beer" item-start large></ion-icon>
+      <div>
+        <div>{{beer.name}}</div>
+        <p>{{beer.style}}</p>
+        <p>Alcohol Content: {{beer.abv}}</p>
+      </div>
+      <ion-icon name="add" item-end small (click)="addToCart(beer)"></ion-icon>
+    </ion-item>
+
+    <ion-infinite-scroll (ionInfinite)="$event.waitFor(doInfinite())">
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+
+  </ion-card>
+  <div *ngIf="filteredBeers.length == 0">No beers found.</div>
+</ion-content>

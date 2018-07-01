@@ -1,0 +1,93 @@
+page-beer-craft {
+    position: relative;
+}
+
+.nav-bar{
+    position: relative;
+    text-align: center;
+}
+
+.header-utils {
+    position: relative;
+    display: flex;
+}
+
+.header-utils > div {
+    position: relative;
+    width: 25%;
+    margin: 2px;
+    border: 20px;
+    align-content: center;
+}
+
+
+.search-bar {
+    width: 50% !important;
+}
+
+.sort-buttons {
+    align-items: center;
+}
+
+.icon-arrow-down {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    padding: 2px;
+    margin: 1px;
+    margin-right: 5px;
+}
+
+.icon-arrow-up {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    padding: 2px;
+    margin: 1px;
+    margin-left: 5px;
+}
+
+.cart-icon {
+    align-items: right;
+}
+
+
+.cart-icon > ion-icon {
+    position: absolute;
+    font-size: 2.1em;
+    right: 15%;
+    top: 35%;
+}
+
+.cart-icon > ion-badge {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.beer-card {
+    padding: 5px;
+    margin: 5px;
+}
+
+
+@media screen and (max-width: 480px) {
+
+.icon-arrow-down {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    padding: 2px;
+    margin-right: 8px;
+}
+
+.icon-arrow-up {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    padding: 2px;
+    margin-left: 8px;
+}
+}

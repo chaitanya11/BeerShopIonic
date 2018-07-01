@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "Ibu": 5,
+        "Abv": 0.05,
+        "Name": "Pub Beer",
+        "Style": "American Pale Larger",
+        "Ounces": 10
+    },
+    {
+        "id": 2,
+        "Ibu": 5,
+        "Abv": 0.06,
+        "Name": "Devils Cup",
+        "Style": "American Pale Ale",
+        "Ounces": 10
+    },
+    {
+        "id": 3,
+        "Ibu": 5,
+        "Abv": 0.07,
+        "Name": "Raise of the Phoenix",
+        "Style": "American IPA",
+        "Ounces": 10
+    },
+    {
+        "id": 4,
+        "Ibu": 5,
+        "Abv": 0.09,
+        "Name": "Sinister",
+        "Style": "American Double",
+        "Ounces": 10
+    },
+    {
+        "id": 5,
+        "Ibu": 5,
+        "Abv": 0.07,
+        "Name": "Sex and Candy",
+        "Style": "American IPA",
+        "Ounces": 10
+    },
+    {
+        "id": 6,
+        "Ibu": 5,
+        "Abv": 0.07,
+        "Name": "Black Exodus",
+        "Style": "Oatmeat Sout",
+        "Ounces": 10
+    },
+    {
+        "id": 7,
+        "Ibu": 5,
+        "Abv": 0.04,
+        "Name": "Lake Streer Express",
+        "Style": "American Pale Ale",
+        "Ounces": 10
+    }
+]
